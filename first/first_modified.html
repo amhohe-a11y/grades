@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+
+<!-- saved from url=(0020)https://sanjeshp.ir/ -->
+<html class="js" xmlns="http://www.w3.org/1999/xhtml"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/><title>
+	مرکز سنجش آموزش پزشکی
+</title><meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/><link href="./مرکز سنجش آموزش پزشکی_files/style1.css" media="all" rel="stylesheet" type="text/css"/><link href="./مرکز سنجش آموزش پزشکی_files/style2.css" media="all" rel="stylesheet" type="text/css"/><link href="./مرکز سنجش آموزش پزشکی_files/style3.css" media="screen" rel="stylesheet" type="text/css"/><link href="./مرکز سنجش آموزش پزشکی_files/style4.css" media="only screen and (max-width: 540px)" rel="stylesheet" type="text/css"/><link href="./مرکز سنجش آموزش پزشکی_files/bristol.css" media="screen" rel="stylesheet" type="text/css"/><link href="./مرکز سنجش آموزش پزشکی_files/font-awesome.min.css" rel="stylesheet"/><link href="./مرکز سنجش آموزش پزشکی_files/font-awesome.css" rel="stylesheet"/><link href="./مرکز سنجش آموزش پزشکی_files/menu.css" rel="stylesheet" type="text/css"/>
+<script src="./مرکز سنجش آموزش پزشکی_files/js1.js.download" type="text/javascript"></script>
+<script src="./مرکز سنجش آموزش پزشکی_files/js2.js.download" type="text/javascript"></script>
+<script src="./مرکز سنجش آموزش پزشکی_files/js3.js.download" type="text/javascript"></script>
+<script src="./مرکز سنجش آموزش پزشکی_files/webvator-file.js.download" type="text/javascript"></script>
+<script src="./مرکز سنجش آموزش پزشکی_files/jquery.js.download" type="text/javascript"></script>
+<script src="./مرکز سنجش آموزش پزشکی_files/menu.js.download" type="text/javascript"></script>
+<script lang="JavaScript">
+
+        //////////F12 disable code////////////////////////
+        document.onkeypress = function (event) {
+            event = (event || window.event);
+            if (event.keyCode == 123) {
+                //alert('No F-12');
+                return false;
+            }
+        }
+        document.onmousedown = function (event) {
+            event = (event || window.event);
+            if (event.keyCode == 123) {
+                //alert('No F-keys');
+                return false;
+            }
+        }
+        document.onkeydown = function (event) {
+            event = (event || window.event);
+            if (event.keyCode == 123) {
+                //alert('No F-keys');
+                return false;
+            }
+        }
+        /////////////////////end///////////////////////
+    </script>
+<script type="text/javascript"> 
+<!-- 
+    //Disable right click script 
+    //visit http://www.rainbow.arch.scriptmania.com/scripts/ 
+    var message = "Sorry, right-click has been disabled";
+    /////////////////////////////////// 
+    function clickIE() { if (document.all) { (message); return false; } }
+    function clickNS(e) {
+        if
+            (document.layers || (document.getElementById && !document.all)) {
+            if (e.which == 2 || e.which == 3) { (message); return false; }
+        }
+    }
+    if (document.layers) { document.captureEvents(Event.MOUSEDOWN); document.onmousedown = clickNS; }
+    else { document.onmouseup = clickNS; document.oncontextmenu = clickIE; }
+    document.oncontextmenu = new Function("return false")
+    // -->
+    </script>
+<script>
+        document.onkeydown = function (e) {
+            if (e.ctrlKey &&
+                (
+                    //e.keyCode === 67 ||  //CTRL C
+                    // e.keyCode === 86 ||  //CTRL V
+                    e.keyCode === 73 ||  //CTRL SHIFT I
+                    e.keyCode === 85 ||  //CTRL U
+                    e.keyCode === 117)) { //F6
+                alert('not allowed');
+                return false;
+            } else {
+                return true;
+            }
+        };
+    </script>
+<style>
+        .hover:hover {
+            -webkit-transform: scale(0.9);
+            transform: scale(1.2);
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+        }
+
+        .link h4 {
+            color: #fff;
+            font-size: 13px;
+            text-transform: uppercase;
+            margin: 27px 0 0 11px;
+            line-height: 1.9em;
+            padding: 5px;
+            font-weight: bold;
+            background: linear-gradient(to bottom,#476D9E 0,#589EBD 100%);
+            text-align: right;
+            width: 195px;
+        }
+
+        .link ul {
+            /*padding: 16px;*/
+            background-color: #EFEFEF;
+            width: 195px;
+            margin: 0 0 0 11px;
+        }
+
+            .link ul li {
+                display: block;
+                border-top: none;
+                padding: 6px 2px;
+                margin: 0;
+                line-height: 1.5em;
+                font-size: 13px;
+                border: none;
+                text-align: right;
+            }
+    </style>
+<style type="text/css">
+        .timestyle {
+            width: 70px;
+            height: 80px;
+            border: none;
+            background: url(Images/abi.png) no-repeat;
+            font: bold 8pt tahoma;
+            text-align: center;
+            cursor: default;
+        }
+
+        .week {
+            color: #FFFFFF;
+            line-height: 23px;
+        }
+
+        .day {
+            font-size: 15pt;
+            line-height: 25px;
+            text-decoration: underline;
+        }
+    </style>
+<script type="text/javascript">
+        $(document).ready(function () {
+            var hashes = window.location.href.slice().split('&');
+
+            //var domaninName = 'http://localhost:24681/';
+            var domaninName = 'http://sanjeshp.ir/';
+            $(function () {
+                switch (window.location.href) {
+                    case hashes = domaninName + 'Content.aspx?click=1':
+                        $('#vArshad').addClass('active');
+                        $("#ulKarshenasiArshad").css("display", "block");
+                        $("#arshad").css("display", "block");
+                        break;
+
+                    case hashes = domaninName + 'Content.aspx?click=2':
+                        $('#vOlumHadis').addClass('active');
+                        $("#ulKarshenasiArshad").css("display", "block");
+                        $("#olumhadis").css("display", "block");
+                        break;
+
+                    case hashes = domaninName + 'Content.aspx?click=4':
+                        $('#vDandanBoard').addClass('active');
+                        $("#ulDandan").css("display", "block");
+                        $("#boarddandan").css("display", "block");
+                        break;
+                    case hashes = domaninName + 'Content.aspx?click=5':
+                        $('#vDandanDastyari').addClass('active');
+                        $("#ulDandan").css("display", "block");
+                        $("#dastyaridandan").css("display", "block");
+                        break;
+                    case hashes = domaninName + 'Content.aspx?click=6':
+                        $('#vDandanJayabi').addClass('active');
+                        $("#ulDandan").css("display", "block");
+                        $("#jayabidandan").css("display", "block");
+                        break;
+                    case hashes = domaninName + 'Content.aspx?click=7':
+                        $('#vDandanMeli').addClass('active');
+                        $("#ulArzeshyabiKharej").css("display", "block");
+                        $("#melidandan").css("display", "block");
+                        break;
+
+                    case hashes = domaninName + 'Content.aspx?click=30':
+                        $('#vDandanErtegha').addClass('active');
+                        $("#ulDandan").css("display", "block");
+                        $("#erteghadandan").css("display", "block");
+                        break;
+
+                    case hashes = domaninName + 'Content.aspx?click=35':
+                        $('#vDandanSalahiyat').addClass('active');
+                        $("#ulDandan").css("display", "block");
+                        $("#salahiyatdandan").css("display", "block");
+                        break;
+
+                    case hashes = domaninName + 'Content.aspx?click=8':
+                        $('#vDaroArzeshyabi').addClass('active');
+                        $("#ulArzeshyabiKharej").css("display", "block");
+                        $("#arzeshyabidaroo").css("display", "block");
+                        break;
+                    case hashes = domaninName + 'Content.aspx?click=9':
+                        $('#vDaroErtegha').addClass('active');
+                        $("#ulArzeshyabiKharej").css("display", "block");
+                        $("#erteghadaroo").css("display", "block");
+                        break;
+                    case hashes = domaninName + 'Content.aspx?click=10':
+                        $('#vDaroPhd').addClass('active');
+                        $("#ulDaroo").css("display", "block");
+                        $("#phddaroo").css("display", "block");
+                        break;
+
+                    case hashes = domaninName + 'Content.aspx?click=42':
+                        $('#vJameDarosazi').addClass('active');
+                        $("#ulDaroo").css("display", "block");
+                        $("#jamedaroo").css("display", "block");
+                        break;
+
+                    case hashes = domaninName + 'Content.aspx?click=11':
+                        $('#vPezeshkiDaneshname').addClass('active');
+                        $("#ulTakhasos").css("display", "block");
+                        $("#daneshname").css("display", "block");
+                        break;
+                    case hashes = domaninName + 'Content.aspx?click=12':
+                        $('#vTakhasosDastyari').addClass('active');
+                        $("#ulTakhasos").css("display", "block");
+                        $("#dastyaripezeshkitakhasos").css("display", "block");
+                        break;
+
+                    case hashes = domaninName + 'Content.aspx?click=31':
+                        $('#vFoghDastyari').addClass('active');
+                        $("#ulTakhasos").css("display", "block");
+                        $("#dastyaripezeshkifoghtakhsos").css("display", "block");
+                        break;
+                    case hashes = domaninName + 'Content.aspx?click=13':
+                        $('#vPezeshkiErtegha').addClass('active');
+                        $("#ulTakhasos").css("display", "block");
+                        $("#erteghapezeshki").css("display", "block");
+                        break;
+                    case hashes = domaninName + 'Content.aspx?click=14':
+                        $('#vPezeshkiKhanevade').addClass('active');
+                        $("#ulTakhasos").css("display", "block");
+                        $("#khanevade").css("display", "block");
+                        break;
+
+                    case hashes = domaninName + 'Content.aspx?click=34':
+                        $('#vPezeshkPajuheshgar').addClass('active');
+                        $('#vPezeshkPajuheshgar').css("font-weight", "700");
+                        $('#vPezeshkPajuheshgar').css("background", "rgb(9, 93, 144)");
+                        break;
+
+                    case hashes = domaninName + 'Content.aspx?click=15':
+                        $('#vFloship').addClass('active');
+                        $("#ulTakhasos").css("display", "block");
+                        $("#floship").css("display", "block");
+                        break;
+                    case hashes = domaninName + 'Content.aspx?click=16':
+                        $('#vFoghTakhasos').addClass('active');
+                        $("#ulTakhasos").css("display", "block");
+                        $("#fogh").css("display", "block");
+                        break;
+                    case hashes = domaninName + 'Content.aspx?click=17':
+                        $('#vMph').addClass('active');
+                        $("#ulTakhasos").css("display", "block");
+                        $("#mph").css("display", "block");
+                        break;
+
+                    case hashes = domaninName + 'Content.aspx?click=18':
+                        $('#vPhdEzam').addClass('active');
+                        $("#ulPhdTakhsos").css("display", "block");
+                        $("#ezam").css("display", "block");
+                        break;
+
+                    case hashes = domaninName + 'Content.aspx?click=28':
+                        $('#vPhd').addClass('active');
+                        $("#ulPhdTakhsos").css("display", "block");
+                        $("#phd").css("display", "block");
+                        break;
+
+                    case hashes = domaninName + 'Content.aspx?click=19':
+                        $('#vOlomPaye').addClass('active');
+                        $("#ulPaye").css("display", "block");
+                        $("#olompaye").css("display", "block");
+                        break;
+
+                    case hashes = domaninName + 'Content.aspx?click=29':
+                        $('#vPishKarvarzi').addClass('active');
+                        $("#ulPaye").css("display", "block");
+                        $("#pishkarvarzi").css("display", "block");
+                        break;
+
+                    case hashes = domaninName + 'Content.aspx?click=20':
+                        $('#vMhle').addClass('active');
+                        $("#ulZaban").css("display", "block");
+                        $("#mhle").css("display", "block");
+                        break;
+
+                    case hashes = domaninName + 'Content.aspx?click=21':
+                        $('#vMeliPezeshki').addClass('active');
+                        $("#ulMeli").css("display", "block");
+                        $("#pezeshkimeli").css("display", "block");
+                        break;
+
+                    case hashes = domaninName + 'Content.aspx?click=22':
+                        $('#vAzmonEnteghal').addClass('active');
+                        $("#ulEnteghal").css("display", "block");
+                        $("#enteghal").css("display", "block");
+                        break;
+
+                    case hashes = domaninName + 'Content.aspx?click=3':
+                        $('#vMajazi').addClass('active');
+                        $("#ulMajaziUniversity").css("display", "block");
+                        $("#majazi").css("display", "block");
+                        break;
+
+                    case hashes = domaninName + 'Content.aspx?click=23':
+                        $('#GhavaninView').css("font-weight", "700");
+                        break;
+
+                    case hashes = domaninName + 'Content.aspx?click=24':
+                        $('#TaghvimView').css("font-weight", "700");
+                        break;
+
+                    case hashes = domaninName + 'Content.aspx?click=25':
+                        $('#UniSystemView').css("font-weight", "700");
+                        break;
+
+                    case hashes = domaninName + 'Content.aspx?click=26':
+                        $('#ManabeView').css("font-weight", "700");
+                        break;
+
+                    case hashes = domaninName + 'Content.aspx?click=27':
+                        $('#ArchiveView').css("font-weight", "700");
+                        break;
+
+                    case hashes = domaninName + 'Content.aspx?click=40':
+                        $('#vInternationalExams').addClass('active');
+                        $('#vInternationalExams').css("font-weight", "700");
+                        $('#vInternationalExams').css("background", "rgb(9, 93, 144)");
+                        break;
+
+                    case hashes = domaninName + 'Content.aspx?click=41':
+                        $('#vOlomAzmayeshgahi').addClass('active');
+                        $("#ulPhdTakhsos").css("display", "block");
+                        $("#olomAzmayeshgahi").css("display", "block");
+                        break;
+
+                    case hashes = domaninName + 'Content.aspx?click=43':
+                        $('#vSalahiatParastari').addClass('active');
+                        $('#vSalahiatParastari').css("font-weight", "700");
+                        $('#vSalahiatParastari').css("background", "rgb(9, 93, 144)");
+                        break;
+
+                    case hashes = domaninName + 'Content.aspx?click=44':
+                        $('#vICU').addClass('active');
+                        $('#vICU').css("font-weight", "700");
+                        $('#vICU').css("background", "rgb(9, 93, 144)");
+                        break;
+
+                    case hashes = domaninName + 'Content.aspx?click=45':
+                        $('#vEnteghalDakhel2019').addClass('active');
+                        $("#ulEnteghalDakhel").css("display", "block");
+                        $("#EnteghalDakhel2019").css("display", "block");
+                        break;
+
+                    case hashes = domaninName + 'Content.aspx?click=45':
+                        $('#vEnteghalDakhel2019_2').addClass('active');
+                        $("#ulEnteghalDakhel").css("display", "block");
+                        $("#EnteghalDakhel2019_2").css("display", "block");
+                        break;
+
+                    case hashes = domaninName + 'Content.aspx?click=51':
+                        $('#vFizioterapyEnteghal').addClass('active');
+                        $("#ulEnteghalDakhel").css("display", "block");
+                        $("#EnteghalFizioterapy").css("display", "block");
+                        break;
+
+                    case hashes = domaninName + 'Content.aspx?click=46':
+                        $('#vMPHOmomi').addClass('active');
+                        $('#vMPHOmomi').css("font-weight", "700");
+                        $('#vMPHOmomi').css("background", "rgb(9, 93, 144)");
+                        break;
+
+                    case hashes = domaninName + 'Content.aspx?click=47':
+                        $('#vEtebar').addClass('active');
+                        $('#vEtebar').css("font-weight", "700");
+                        $('#vEtebar').css("background", "rgb(9, 93, 144)");
+                        break;
+
+                    case hashes = domaninName + 'Content.aspx?click=49':
+                        $('#vDafater').addClass('active');
+                        $('#vDafater').css("font-weight", "700");
+                        $('#vDafater').css("background", "rgb(9, 93, 144)");
+                        break;
+
+                    case hashes = domaninName + 'Content.aspx?click=50':
+                        $('#vFizioterapy').addClass('active');
+                        $('#vFizioterapy').css("font-weight", "700");
+                        $('#vFizioterapy').css("background", "rgb(9, 93, 144)");
+                        break;
+                    case hashes = domaninName + 'Content.aspx?click=54':
+                        $('#vLisansPezeshki').addClass('active');
+                        $('#vLisansPezeshki').css("font-weight", "700");
+                        $('#vLisansPezeshki').css("background", "rgb(9, 93, 144)");
+                        break;
+                
+
+
+                }
+            });
+        });
+    </script>
+<style type="text/css">
+        .style1 {
+            width: 100%;
+        }
+
+        .style2 {
+            width: 80px;
+            text-align: left;
+            padding: 0;
+            border: none;
+        }
+
+        .pad {
+            padding: 0;
+            border: none;
+        }
+    </style>
+</head>
+<body class="html front not-logged-in no-sidebars page-frontpage tao non-mobile">
+<form action="https://sanjeshp.ir/" autocomplete="off" id="aspnetForm" method="post" name="aspnetForm">
+<div>
+<input id="__EVENTTARGET" name="__EVENTTARGET" type="hidden" value=""/>
+<input id="__EVENTARGUMENT" name="__EVENTARGUMENT" type="hidden" value=""/>
+<input id="__VIEWSTATE" name="__VIEWSTATE" type="hidden" value="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"/>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+<div>
+<input id="__VIEWSTATEGENERATOR" name="__VIEWSTATEGENERATOR" type="hidden" value="C8125695"/>
+</div>
+<div id="skip-link">
+<a class="element-invisible element-focusable" href="https://sanjeshp.ir/#main-content">Skip to main content</a>
+</div>
+<div id="header">
+<div id="header-wrapper">
+<a href="https://sanjeshp.ir/#" id="mobile-nav">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</a>
+<div class="view view-main-header view-id-main_header view-display-id-main_header_panel_pane view-dom-id-3af75297e8d9c0cb75674b84fce2d69e">
+<div class="view-content">
+<div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+<div class="gwlogo clearfix">
+<div class="field field-name-field-logo field-type-image field-label-hidden">
+<div class="field-items">
+<div class="field-item even">
+<div class="timestyle">
+<div>
+<div class="week">
+<span id="ctl00_TextPersianDay">پنج شنبه</span><br/>
+</div>
+<div class="day">
+<span id="ctl00_TextPersianDayNum">27</span><br/>
+</div>
+<span id="ctl00_TextPersianMonth">شهریور</span><br/>
+<span id="ctl00_TextPersianYear">1404</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="right clearfix">
+<div class="clearfix">
+<div id="search-holder">
+</div>
+</div>
+<div class="links clearfix">
+<a href="https://sanjeshp.ir/StartPage.aspx">صفحه اصلی</a>          |            <a href="https://sanjeshp.ir/AboutUs.aspx">درباره ما</a>          |            <a href="https://sanjeshp.ir/ContactUs.aspx">تماس با ما</a>
+</div>
+                                 
+                            </div>
+<div class="bottom clearfix">
+<div class="target-audience">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="page">
+<div class="limiter clearfix">
+<div class="clearfix" id="main-content">
+<div class="clearfix" id="content">
+<div class="region region-content">
+<div class="panel-display panel-front-page clearfix">
+<img src="./مرکز سنجش آموزش پزشکی_files/baner2.jpg" typeof="foaf:Image"/>
+<div class="panel-panel panel-col-top">
+<div class="inside">
+<div class="panel-pane pane-gwu-primary-navigation">
+<div class="pane-content">
+<div id="menu-wrapper">
+<div id="menu-top">
+<div class="menu-block-wrapper menu-block-2 menu-name-menu-division-menu parent-mlid-0 menu-level-1" style="margin-top: -13px">
+<ul class="menu">
+<li class="leaf has-children menu-mlid-1594"><span title=""><a href="https://sanjeshp.ir/Content.aspx?click=27">بایگانی</a></span></li>
+<li class="leaf has-children menu-mlid-786" style="width: 189px"><span title=""><a href="https://sanjeshp.ir/Content.aspx?click=23">قوانین آزمون ها</a></span></li>
+<li class="first leaf has-children menu-mlid-784"><span title=""><a href="https://sanjeshp.ir/Content.aspx?click=25">سیستم دانشگاه</a></span></li>
+<li class="leaf has-children menu-mlid-787"><span title=""><a href="https://sanjeshp.ir/Content.aspx?click=26">منابع آزمون ها</a></span></li>
+<li class="leaf has-children menu-mlid-785"><span title=""><a href="https://sanjeshp.ir/Content.aspx?click=24">تقویم آزمون</a></span></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pane clearfix" id="top-footer">
+<div class="panel-pane pane-views-panes pane-rotating-image-teaser-panel-pane-1" id="ctl00_ContentPlaceHolder3_divAllSlider">
+<h2 class="pane-title" style="text-align: right">اخبار ویژه</h2>
+<div class="pane-content">
+<div class="view view-rotating-image-teaser view-id-rotating_image_teaser view-display-id-panel_pane_1 view-dom-id-473cf0c426b66ee3a8d905c0c7c22cbb">
+<div class="view-content">
+<div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+<div class="rotating-teaser">
+<div>
+<a class="prev browse left">Previous</a>
+<div class="slides-container clearfix scrollable-circular">
+<div class="items" style="left: 0px;"><div class="cloned">
+</div>
+<div>
+<div class="slide" id="ctl00_ContentPlaceHolder3_divSlide1">
+<a href="javascript:void(0)">
+<div class="image">
+<img height="115" id="ctl00_ContentPlaceHolder3_Slide1Image" src="./مرکز سنجش آموزش پزشکی_files/img4.jpg" typeof="foaf:Image" width="247"/>
+</div>
+</a>
+<h5 style="text-align: right; direction: rtl;">
+<a href="https://sanjeshp.ir/PDF.aspx?newsid=103223&amp;type=application/pdf" id="ctl00_ContentPlaceHolder3_Slide1Txt" style="">
+<span id="ctl00_ContentPlaceHolder3_lblSlide1">نحوه نمره دهی آزمون پذیرش دستیار تخصصی  </span>
+</a>
+</h5>
+</div>
+<div class="slide" id="ctl00_ContentPlaceHolder3_divSlide2">
+<a href="javascript:void(0)">
+<div class="image">
+<img height="115" id="ctl00_ContentPlaceHolder3_Slide2Image" src="./مرکز سنجش آموزش پزشکی_files/img4.jpg" typeof="foaf:Image" width="247"/>
+</div>
+</a>
+<h5 style="text-align: right; direction: rtl;">
+<a href="https://sanjeshp.ir/PDF.aspx?newsid=103234&amp;type=application/pdf" id="ctl00_ContentPlaceHolder3_Slide2Txt" style="">
+<span id="ctl00_ContentPlaceHolder3_lblSlide2">اطلاعیه مرحله دوم رشته هاي مورد پذيرش دانشگاه شاهد- زمان اعلام نتایج نهایی آزمون كارشناسي ارشد سال 1404 </span>
+</a></h5>
+</div>
+<div class="slide" id="ctl00_ContentPlaceHolder3_divSlide3">
+<a href="javascript:void(0)">
+<div class="image">
+<img height="115" id="ctl00_ContentPlaceHolder3_Slide3Image" src="./مرکز سنجش آموزش پزشکی_files/img4.jpg" typeof="foaf:Image" width="247"/>
+</div>
+</a>
+<h5 style="text-align: right; direction: rtl;">
+<a href="https://sanjeshp.ir/PDF.aspx?newsid=103278&amp;type=application/pdf" id="ctl00_ContentPlaceHolder3_Slide3Txt" style="">
+<span id="ctl00_ContentPlaceHolder3_lblSlide3">اطلاعیه اعلام اسامي پذيرفته شدگان آزمون كارشناسي ارشد 1405-1404  </span>
+</a></h5>
+</div>
+</div>
+<div>
+</div>
+<div class="cloned">
+<div class="slide" id="ctl00_ContentPlaceHolder3_divSlide1">
+<a href="javascript:void(0)">
+<div class="image">
+<img height="115" id="ctl00_ContentPlaceHolder3_Slide1Image" src="./مرکز سنجش آموزش پزشکی_files/img4.jpg" typeof="foaf:Image" width="247"/>
+</div>
+</a>
+<h5 style="text-align: right; direction: rtl;">
+<a href="https://sanjeshp.ir/PDF.aspx?newsid=103223&amp;type=application/pdf" id="ctl00_ContentPlaceHolder3_Slide1Txt" style="">
+<span id="ctl00_ContentPlaceHolder3_lblSlide1">نحوه نمره دهی آزمون پذیرش دستیار تخصصی  </span>
+</a>
+</h5>
+</div>
+<div class="slide" id="ctl00_ContentPlaceHolder3_divSlide2">
+<a href="javascript:void(0)">
+<div class="image">
+<img height="115" id="ctl00_ContentPlaceHolder3_Slide2Image" src="./مرکز سنجش آموزش پزشکی_files/img4.jpg" typeof="foaf:Image" width="247"/>
+</div>
+</a>
+<h5 style="text-align: right; direction: rtl;">
+<a href="https://sanjeshp.ir/PDF.aspx?newsid=103234&amp;type=application/pdf" id="ctl00_ContentPlaceHolder3_Slide2Txt" style="">
+<span id="ctl00_ContentPlaceHolder3_lblSlide2">اطلاعیه مرحله دوم رشته هاي مورد پذيرش دانشگاه شاهد- زمان اعلام نتایج نهایی آزمون كارشناسي ارشد سال 1404 </span>
+</a></h5>
+</div>
+<div class="slide" id="ctl00_ContentPlaceHolder3_divSlide3">
+<a href="javascript:void(0)">
+<div class="image">
+<img height="115" id="ctl00_ContentPlaceHolder3_Slide3Image" src="./مرکز سنجش آموزش پزشکی_files/img4.jpg" typeof="foaf:Image" width="247"/>
+</div>
+</a>
+<h5 style="text-align: right; direction: rtl;">
+<a href="https://sanjeshp.ir/PDF.aspx?newsid=103278&amp;type=application/pdf" id="ctl00_ContentPlaceHolder3_Slide3Txt" style="">
+<span id="ctl00_ContentPlaceHolder3_lblSlide3">اطلاعیه اعلام اسامي پذيرفته شدگان آزمون كارشناسي ارشد 1405-1404  </span>
+</a></h5>
+</div>
+</div></div>
+</div>
+<!-- end slide container -->
+<a class="next browse right">Next</a>
+</div>
+</div>
+<!-- end div-->
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="panel-panel panel-col-middle">
+<div id="ctl00_ContentPlaceHolder1_divKarshenasiArshad">
+<h1 style="margin-bottom: 0">آخرین اخبار
+            <span id="ctl00_ContentPlaceHolder1_lblKarshenasiArshad">کارشناسی ارشد</span></h1>
+<div class="box">
+<div>
+<table border="1" cellspacing="0" id="ctl00_ContentPlaceHolder1_gvKarshenasiArshad" rules="all" style="border-collapse:collapse;">
+<tbody><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$gvKarshenasiArshad$ctl02$btnLink','')" id="ctl00_ContentPlaceHolder1_gvKarshenasiArshad_ctl02_btnLink" onclick="document.forms[0].target = '_blank';" style="" title="ارشد - سال 1405 - 1404/02/17">اطلاعیه شماره 2- در خصوص افزوده شدن مدارک  کارشناسی :فوریتهای پزشکی و مشاوره به رشته امتحانی آزمون كارشناسی ارشد رشته های گروه پزشكی سال 1405 (1404/02/17) </a>
+</td>
+</tr><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$gvKarshenasiArshad$ctl03$btnLink','')" id="ctl00_ContentPlaceHolder1_gvKarshenasiArshad_ctl03_btnLink" onclick="document.forms[0].target = '_blank';" style="" title="ارشد - سال 1405 - 1404/02/14">اطلاعیه شماره 1-در خصوص رشته های امتحانی، دروس و ضرایب آزمون كارشناسی ارشد رشته های گروه پزشكی سال 1405(بروزرسانی 1404/02/17) </a>
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</div>
+<div id="ctl00_ContentPlaceHolder1_divDandan">
+<h1 style="margin-bottom: 0">آخرین اخبار
+            <span id="ctl00_ContentPlaceHolder1_lblDandan">دندانپزشکی</span></h1>
+<div class="box">
+<div>
+<table border="1" cellspacing="0" id="ctl00_ContentPlaceHolder1_gvDandanPezeshki" rules="all" style="border-collapse:collapse;">
+<tbody><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$gvDandanPezeshki$ctl02$btnLink','')" id="ctl00_ContentPlaceHolder1_gvDandanPezeshki_ctl02_btnLink" style="" title="دانشنامه تخصصی دندانپزشکی - دوره 41 - 1404/06/17">قابل توجه داوطلبان شرکت کننده در آزمون بورد سال 1404 رشته پروتزهای دندانی (1404/6/17) </a>
+</td>
+</tr><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$gvDandanPezeshki$ctl03$btnLink','')" id="ctl00_ContentPlaceHolder1_gvDandanPezeshki_ctl03_btnLink" style="" title="دانشنامه تخصصی دندانپزشکی - دوره 41 - 1404/06/16">محاسبه امتیاز پژوهشی رشته های دندانپزشکی کودکان و پریودانتیکس (1404/6/16) </a>
+</td>
+</tr><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$gvDandanPezeshki$ctl04$btnLink','')" id="ctl00_ContentPlaceHolder1_gvDandanPezeshki_ctl04_btnLink" style="" title="دانشنامه تخصصی دندانپزشکی - دوره 41 - 1404/06/16">دستورالعمل بورد ترمیمی (1404/6/16) </a>
+</td>
+</tr><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a disabled="disabled" id="ctl00_ContentPlaceHolder1_gvDandanPezeshki_ctl05_btnLink" style="color:red;decoration:none;" title="دستیاری دندانپزشکی
+ - دوره 39 - 1404/04/29">مهلت ثبت نام، ویرایش فرم ثبت نام و تکمیل مدارک از ساعت 12 ظهر دوشنبه 3 شهریور تا 12 ظهر چهارشنبه 5 شهریور 1404 تمدید شد.(1404/04/29) </a>
+</td>
+</tr><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a disabled="disabled" id="ctl00_ContentPlaceHolder1_gvDandanPezeshki_ctl06_btnLink" style="color:red;decoration:none;" title="دستیاری دندانپزشکی
+ - دوره 39 - 1404/04/10">آزمون دستیاری دندانپزشکی دوره 39 (سال 1404) در روز پنج شنبه 27 شهریور 1404 برگزار خواهد شد.(1404/04/10) </a>
+</td>
+</tr><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a disabled="disabled" id="ctl00_ContentPlaceHolder1_gvDandanPezeshki_ctl07_btnLink" style="color:red;decoration:none;" title="صلاحیت بالینی دندانپزشکی - سال 1403 - 1403/12/20">مهلت ارسال اعتراضات آزمون صلاحیت بالینی دندانپزشکی از ساعت 12 روز دوشنبه 20 اسفند 1403 تا ساعت 12 روز چهارشنبه 22 اسفند می باشد.(1403/12/20) </a>
+</td>
+</tr><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a disabled="disabled" id="ctl00_ContentPlaceHolder1_gvDandanPezeshki_ctl08_btnLink" style="" title="صلاحیت بالینی دندانپزشکی - سال 1403 - 1403/07/08">مهلت ارسال اعتراضات آزمون صلاحیت بالینی دندانپزشکی از ساعت 12روز یکشنبه 8 مهر1403 تا ساعت 12 روز سه شنبه 10مهر1403می باشد.(1403/07/08) </a>
+</td>
+</tr><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$gvDandanPezeshki$ctl09$btnLink','')" id="ctl00_ContentPlaceHolder1_gvDandanPezeshki_ctl09_btnLink" style="" title="ملی دندانپزشکی - دوره 23 - 1404/06/11">اعلام نتایج بیست و سومین دوره آزمون ملی دندانپزشکی - مرداد 1404(1404/6/11) </a>
+</td>
+</tr><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$gvDandanPezeshki$ctl10$btnLink','')" id="ctl00_ContentPlaceHolder1_gvDandanPezeshki_ctl10_btnLink" style="" title="ملی دندانپزشکی - دوره 23 - 1404/05/29">طلاعیه کلید نهایی آزمون های دانش آموختگان و دانشجویان خارج از کشور مورخ 16 مرداد 1404(1404/5/29) </a>
+</td>
+</tr><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$gvDandanPezeshki$ctl11$btnLink','')" id="ctl00_ContentPlaceHolder1_gvDandanPezeshki_ctl11_btnLink" style="" title="ارتقاء دندانپزشکی - سال 1404 - 1404/06/16">آزمون آزمایشی الکترونیک ارتقای دستیاران تخصصی دندانپزشکی (1404/6/16) </a>
+</td>
+</tr><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a disabled="disabled" id="ctl00_ContentPlaceHolder1_gvDandanPezeshki_ctl12_btnLink" style="color:red;decoration:none;" title="ارتقاء دندانپزشکی - سال 1404 - 1404/04/10">آزمون ارتقای دستیاران تخصصی دندانپزشکی سال 1404 در روز پنج شنبه 27 شهریور 1404 برگزار خواهد شد.(1404/04/10) </a>
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</div>
+<div id="ctl00_ContentPlaceHolder1_divDaroo">
+<h1 style="margin-bottom: 0">آخرین اخبار
+            <span id="ctl00_ContentPlaceHolder1_lblDaroo">داروسازی</span></h1>
+<div class="box">
+<div>
+<table border="1" cellspacing="0" id="ctl00_ContentPlaceHolder1_gvDaroosazi" rules="all" style="border-collapse:collapse;">
+<tbody><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$gvDaroosazi$ctl02$btnLink','')" id="ctl00_ContentPlaceHolder1_gvDaroosazi_ctl02_btnLink" style="" title="ارزشیابی داروسازی - سال 1404 - 1404/05/29">اطلاعیه کلید نهایی آزمون های دانش آموختگان و دانشجویان خارج از کشور مورخ 16 مرداد 1404(1404/5/29) </a>
+</td>
+</tr><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a disabled="disabled" id="ctl00_ContentPlaceHolder1_gvDaroosazi_ctl03_btnLink" style="color:red;decoration:none;" title="ارزشیابی داروسازی - سال 1404 - 1404/04/28">ثبت نام و ویرایش فرم ثبت نام از ساعت 12 ظهر یکشنبه 5 مرداد تا 12 ظهر سه شنبه 7 مرداد 1404 تمدید شد.(1404/04/28) </a>
+</td>
+</tr><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$gvDaroosazi$ctl04$btnLink','')" id="ctl00_ContentPlaceHolder1_gvDaroosazi_ctl04_btnLink" style="" title="ارتقاء داروسازی - سال 1404 - 1404/05/29">اطلاعیه کلید نهایی آزمون های دانش آموختگان و دانشجویان خارج از کشور مورخ 16 مرداد 1404(1404/5/29) </a>
+</td>
+</tr><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a disabled="disabled" id="ctl00_ContentPlaceHolder1_gvDaroosazi_ctl05_btnLink" style="color:red;decoration:none;" title="ارتقاء داروسازی - سال 1404 - 1404/04/28">ثبت نام و ویرایش فرم ثبت نام از ساعت 12 ظهر یکشنبه 5 مرداد تا 12 ظهر سه شنبه 7 مرداد 1404 تمدید شد.(1404/04/28) </a>
+</td>
+</tr><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$gvDaroosazi$ctl06$btnLink','')" id="ctl00_ContentPlaceHolder1_gvDaroosazi_ctl06_btnLink" style="" title="Ph.D داروسازی - سال 1404 - 1404/02/13"></a><a href="https://sanjeshp.ir/Content.aspx?click=28" style="color: red;font-weight: bold;">مشاهده اخبار و اطلاعیه آزمون دکتری داروسازی 1404 </a>
+</td>
+</tr><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$gvDaroosazi$ctl07$btnLink','')" id="ctl00_ContentPlaceHolder1_gvDaroosazi_ctl07_btnLink" style="" title="جامع داروسازی - سال 1404 - 1404/06/05">اطلاعیه کلید نهایی آزمون پایان دوره داروسازی مرداد 1404(1404/6/5) </a>
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</div>
+<div id="ctl00_ContentPlaceHolder1_divTakhasosFoghTakhasos">
+<h1 style="margin-bottom: 0">آخرین اخبار
+            <span id="ctl00_ContentPlaceHolder1_lblTakhasos">تخصصی و فوق تخصصی پزشکی</span></h1>
+<div class="box">
+<div>
+<table border="1" cellspacing="0" id="ctl00_ContentPlaceHolder1_gvPezeshkiTakhasosi" rules="all" style="border-collapse:collapse;">
+<tbody><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$gvPezeshkiTakhasosi$ctl02$btnLink','')" id="ctl00_ContentPlaceHolder1_gvPezeshkiTakhasosi_ctl02_btnLink" style="" title="دانشنامه تخصصی پزشکی - دوره 72 - 1404/06/08">آزمون هاي شفاهي چهل و چهارمین دوره گواهینامه و هفتاد و دومین دوره‌ دانشنامه‌ رشته‌هاي‌ تخصصي‌ و سی و نهمین دوره‌‌ دانشنامه‌ رشته‌هاي‌ فوق تخصصي‌ باليني‌ پزشكي -‌‌ شهریورماه 1404 (1404/6/8) </a>
+</td>
+</tr><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$gvPezeshkiTakhasosi$ctl03$btnLink','')" id="ctl00_ContentPlaceHolder1_gvPezeshkiTakhasosi_ctl03_btnLink" style="" title="دانشنامه تخصصی پزشکی - دوره 72 - 1404/06/04">محل برگزاري آزمون هاي شفاهی هفتاد و دومین دوره آزمون دانشنامه تخصصی و سی و نهمین دوره آزمون دانشنامه فوق تخصصی سال 1404 (1404/6/4) </a>
+</td>
+</tr><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$gvPezeshkiTakhasosi$ctl04$btnLink','')" id="ctl00_ContentPlaceHolder1_gvPezeshkiTakhasosi_ctl04_btnLink" style="" title="دانشنامه تخصصی پزشکی - دوره 72 - 1404/05/22">اطلاعیه تمدید زمان ثبت نام سی و نهمین دوره آزمون گواهینامه-دانشنامه فوق تخصصی و چهل و چهارمین دوره آزمون گواهینامه تخصصی و هفتاد و دومین دوره آزمون دانشنامه تخصصی </a>
+</td>
+</tr><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$gvPezeshkiTakhasosi$ctl05$btnLink','')" id="ctl00_ContentPlaceHolder1_gvPezeshkiTakhasosi_ctl05_btnLink" style="" title="دانشنامه فوق تخصصی پزشکی - دوره 39 - 1404/06/12">قابل توجه داوطلبان آزمون شفاهی رشته فوق تخصصی گوارش و کبد بالغین (1404/6/12) </a>
+</td>
+</tr><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$gvPezeshkiTakhasosi$ctl06$btnLink','')" id="ctl00_ContentPlaceHolder1_gvPezeshkiTakhasosi_ctl06_btnLink" style="" title="دانشنامه فوق تخصصی پزشکی - دوره 39 - 1404/06/08">آزمون هاي شفاهي چهل و چهارمین دوره گواهینامه و هفتاد و دومین دوره‌ دانشنامه‌ رشته‌هاي‌ تخصصي‌ و سی و نهمین دوره‌‌ دانشنامه‌ رشته‌هاي‌ فوق تخصصي‌ باليني‌ پزشكي -‌‌ شهریورماه 1404 (1404/6/8) </a>
+</td>
+</tr><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$gvPezeshkiTakhasosi$ctl07$btnLink','')" id="ctl00_ContentPlaceHolder1_gvPezeshkiTakhasosi_ctl07_btnLink" style="" title="دستیاری تخصصی پزشکی - دوره 53 - 1404/05/22">اطلاعیه شماره 1- در خصوص نحوه نمره دهی آزمون پذیرش دستیار تخصصی (1404/5/22) </a>
+</td>
+</tr><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a disabled="disabled" id="ctl00_ContentPlaceHolder1_gvPezeshkiTakhasosi_ctl08_btnLink" style="color:red;decoration:none;" title="دستیاری فوق تخصصی پزشکی - دوره 42 - 1404/01/25">انتخاب محل و ویرایش در چهل و دومین دوره آزمون پذیرش دستیار فوق تخصصی از ساعت 8 صبح روز سه شنبه 26 فروردین تا ساعت 24 روز یک شنبه 31 فروردین تمدید می گردد.(1404/01/25) </a>
+</td>
+</tr><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$gvPezeshkiTakhasosi$ctl09$btnLink','')" id="ctl00_ContentPlaceHolder1_gvPezeshkiTakhasosi_ctl09_btnLink" style="" title="دستیاری فوق تخصصی پزشکی - دوره 42 - 1403/12/19">جدول ظرفیت دوره 42 آزمون پذیرش دستیار فوق تخصصی (1403/12/19) </a>
+</td>
+</tr><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$gvPezeshkiTakhasosi$ctl10$btnLink','')" id="ctl00_ContentPlaceHolder1_gvPezeshkiTakhasosi_ctl10_btnLink" style="" title="دستیاری فوق تخصصی پزشکی - دوره 42 - 1403/12/19">اطلاعیه روتیشن (1403/12/19) </a>
+</td>
+</tr><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a disabled="disabled" id="ctl00_ContentPlaceHolder1_gvPezeshkiTakhasosi_ctl11_btnLink" style="color:red;decoration:none;" title="ارتقاء دستیاری و گواهینامه تخصصی - دوره 44 - 1404/05/25">به اطلاع داوطلبان گرامی آزمون ارتقاء دستیاران تخصصی پزشکی سال ۱۴۰۴ می رساند، مهلت ارسال اعتراضات تا ساعت ۶ صبح روز یکشنبه ۲۶ مرداد تمدید شد.(1404/05/25) </a>
+</td>
+</tr><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a disabled="disabled" id="ctl00_ContentPlaceHolder1_gvPezeshkiTakhasosi_ctl12_btnLink" style="color:red;decoration:none;" title="ارتقاء دستیاری و گواهینامه تخصصی - دوره 44 - 1404/05/23">ضمن عذرخواهی از داوطلبان گرامی، به علت مشکل فنی پیش آمده در اعلام پاسخنامه رشته گوش، گلو و بینی، بدینوسیله کلید اولیه اصلاح و جایگزین می شود. </a>
+</td>
+</tr><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$gvPezeshkiTakhasosi$ctl13$btnLink','')" id="ctl00_ContentPlaceHolder1_gvPezeshkiTakhasosi_ctl13_btnLink" style="" title="پزشک خانواده - دوره 3 - 10/03/1396">در خصوص اعلام نتایج آزمون پذیرش دستیار تخصصی پزشک خانواده </a>
+</td>
+</tr><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$gvPezeshkiTakhasosi$ctl14$btnLink','')" id="ctl00_ContentPlaceHolder1_gvPezeshkiTakhasosi_ctl14_btnLink" style="" title="پزشک خانواده - دوره 3 - 17/02/1396">درخصوص تمدید ویرایش انتخاب محل سومین دوره آزمون  پذيرش دستیار تخصصي پزشک خانواده </a>
+</td>
+</tr><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$gvPezeshkiTakhasosi$ctl15$btnLink','')" id="ctl00_ContentPlaceHolder1_gvPezeshkiTakhasosi_ctl15_btnLink" style="" title="فلوشیپ - سال 1404 - 1404/05/15">اطلاعیه آزمون شفاهی فلوشیپ ۱۴۰۴(۱۴۰۴/۵/۱۵) </a>
+</td>
+</tr><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$gvPezeshkiTakhasosi$ctl16$btnLink','')" id="ctl00_ContentPlaceHolder1_gvPezeshkiTakhasosi_ctl16_btnLink" style="" title="فلوشیپ - سال 1404 - 1404/05/08">اطلاعیه صدور کارت ورود به جلسه آزمون فلوشیپ 1404(1404/5/8) </a>
+</td>
+</tr><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a disabled="disabled" id="ctl00_ContentPlaceHolder1_gvPezeshkiTakhasosi_ctl17_btnLink" style="color: red;text-decoration: none;" title="MPH - سال 1396 - 16/08/1396">کلید نهایی: سوال 81 حذف شده است </a>
+</td>
+</tr><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$gvPezeshkiTakhasosi$ctl18$btnLink','')" id="ctl00_ContentPlaceHolder1_gvPezeshkiTakhasosi_ctl18_btnLink" style="" title="MPH - سال 1396 - 22/07/1396">قابل توجه متقاضیان شرکت در آزمون MPH ویژه توانمند سازی پزشکان خانواده آبان 96 </a>
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</div>
+<div id="ctl00_ContentPlaceHolder1_divTakhasosiPhd">
+<h1 style="margin-bottom: 0">آخرین اخبار
+            <span id="ctl00_ContentPlaceHolder1_lblPhd">دکتری تخصصی Ph.D</span></h1>
+<div class="box">
+<div>
+<table border="1" cellspacing="0" id="ctl00_ContentPlaceHolder1_gvTakhasosiPhd" rules="all" style="border-collapse:collapse;">
+<tbody><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$gvTakhasosiPhd$ctl02$btnLink','')" id="ctl00_ContentPlaceHolder1_gvTakhasosiPhd_ctl02_btnLink" style="" title="دکتری تخصصی Ph.D - سال 1404 - 1404/06/24">اطلاعیه شماره 4- مدارک مورد پذیرش رشته زیست مواد دندانی (1404/6/24) <label style="color:red">(جدید)</label></a>
+</td>
+</tr><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a disabled="disabled" id="ctl00_ContentPlaceHolder1_gvTakhasosiPhd_ctl03_btnLink" style="color:red;decoration:none;" title="دکتری تخصصی Ph.D - سال 1404 - 1404/06/11">تمدید مهلت ثبت نام، ویرایش اطلاعات و تکمیل مدارک از 22 تا 25 شهریور ماه خواهد بود.(1404/06/11) </a>
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</div>
+<div id="ctl00_ContentPlaceHolder1_divOlomPaye">
+<h1 style="margin-bottom: 0">آخرین اخبار
+            <span id="ctl00_ContentPlaceHolder1_lblPaye">جامع علوم پایه/پیش کارورزی</span></h1>
+<div class="box">
+<div>
+<table border="1" cellspacing="0" id="ctl00_ContentPlaceHolder1_gvOlomPayeh" rules="all" style="border-collapse:collapse;">
+<tbody><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$gvOlomPayeh$ctl02$btnLink','')" id="ctl00_ContentPlaceHolder1_gvOlomPayeh_ctl02_btnLink" style="" title="علوم پایه - سال 1404 - 1404/05/04">اطلاعیه- قابل توجه دانش آموختگان خارج از کشور متقاضی شرکت در آزمون علوم پایه شهریور 1404(1404/05/04) </a>
+</td>
+</tr><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$gvOlomPayeh$ctl03$btnLink','')" id="ctl00_ContentPlaceHolder1_gvOlomPayeh_ctl03_btnLink" style="" title="پیش کارورزی - سال 1404 - 1404/05/04">اطلاعیه- قابل توجه دانش آموختگان خارج از کشور متقاضی شرکت در آزمون پیش کارورزی شهریور 1404(1404/05/04) </a>
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</div>
+<div id="ctl00_ContentPlaceHolder1_divZaban">
+<h1 style="margin-bottom: 0">آخرین اخبار
+            <span id="ctl00_ContentPlaceHolder1_lblZaban">زبان</span></h1>
+<div class="box">
+<div>
+<table border="1" cellspacing="0" id="ctl00_ContentPlaceHolder1_gvZaban" rules="all" style="border-collapse:collapse;">
+<tbody><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a disabled="disabled" id="ctl00_ContentPlaceHolder1_gvZaban_ctl02_btnLink" style="color:red;decoration:none;" title="MHLE - دوره 41 - 1404/04/10">ثبت نام و ویرایش فرم ثبت نام آزمون MHLE دوره 80 از ساعت 12 ظهر روز سه شنبه 10 تیر تا ساعت 12 ظهر روز چهارشنبه 25 تیر 1404 تمدید شد.(1404/04/10) </a>
+</td>
+</tr><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a disabled="disabled" id="ctl00_ContentPlaceHolder1_gvZaban_ctl03_btnLink" style="color:red;decoration:none;" title="MHLE - دوره 41 - 1404/04/10">آزمون MHLE دوره 80 در تاریخ پنج شنبه 2 مرداد 1404 برگزار خواهد شد.(1404/04/10) </a>
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</div>
+<div id="ctl00_ContentPlaceHolder1_divMeli">
+<h1 style="margin-bottom: 0">آخرین اخبار
+            <span id="ctl00_ContentPlaceHolder1_lblMelli">آزمون توجیهی بدو خدمت</span></h1>
+<div class="box">
+<div>
+<table border="1" cellspacing="0" id="ctl00_ContentPlaceHolder1_gvMelli" rules="all" style="border-collapse:collapse;">
+<tbody><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a disabled="disabled" id="ctl00_ContentPlaceHolder1_gvMelli_ctl02_btnLink" style="" title="آزمون توجیهی بدو خدمت کارکنان - اسفند 1400 - 1400/12/07"> مهلت ثبت نام و ویرایش آزمون توجیهی بدو خدمت کارکنان تا روز یکشنبه 1400/12/8تمدید گردید. </a>
+</td>
+</tr><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$gvMelli$ctl03$btnLink','')" id="ctl00_ContentPlaceHolder1_gvMelli_ctl03_btnLink" style="" title="آزمون توجیهی بدو خدمت کارکنان - اسفند 1400 - 1400/11/30">دفترچه راهنما  آزمون توجیهی بدوخدمت- اسفندماه 1400(ویرایش 1400/12/3) </a>
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</div>
+<div id="ctl00_ContentPlaceHolder1_divEnteghal">
+<h1 style="margin-bottom: 0">آخرین اخبار
+            <span id="ctl00_ContentPlaceHolder1_lblEnteghal">آزمون استخدامی</span></h1>
+<div class="box">
+<div>
+<table border="1" cellspacing="0" id="ctl00_ContentPlaceHolder1_gvEnteghal" rules="all" style="border-collapse:collapse;">
+<tbody><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$gvEnteghal$ctl02$btnLink','')" id="ctl00_ContentPlaceHolder1_gvEnteghal_ctl02_btnLink" style="" title="آزمون استخدامی - سال 1399 - 1399/12/19">اطلاعيه مرکز سنجش آموزش پزشکی درخصوص اعلام نتایج آزمون استخدامي قراردادی متمركز دانشگاه/ دانشکده های علوم پزشکی و خدمات بهداشتی درمانی كشور در سال 1399  </a>
+</td>
+</tr><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$gvEnteghal$ctl03$btnLink','')" id="ctl00_ContentPlaceHolder1_gvEnteghal_ctl03_btnLink" style="" title="آزمون استخدامی - سال 1399 - 03/10/1399">قابل توجه شرکت کنندگان آزمون استخدام قراردادی شهریور سال 1399 دانشگاه‌های علوم پزشکی </a>
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</div>
+<div id="ctl00_ContentPlaceHolder1_divMajazi">
+<h1 style="margin-bottom: 0">آخرین اخبار
+            <span id="ctl00_ContentPlaceHolder1_lblMajaziUni">مجازي اخلاق پزشكي</span></h1>
+<div class="box">
+<div>
+<table border="1" cellspacing="0" id="ctl00_ContentPlaceHolder1_gvMajaziUni" rules="all" style="border-collapse:collapse;">
+<tbody><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a disabled="disabled" id="ctl00_ContentPlaceHolder1_gvMajaziUni_ctl02_btnLink" style="" title="دوره كارشناسي ارشد مجازي اخلاق پزشكي - 1400 - 1400/05/04"></a><a href="https://arshad2.sanjeshp.ir/AkhlaghPezeshkiMajazi/">ورود به سامانه اعلام نتایج    </a>
+</td>
+</tr><tr>
+<td align="right">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+<a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$gvMajaziUni$ctl03$btnLink','')" id="ctl00_ContentPlaceHolder1_gvMajaziUni_ctl03_btnLink" style="" title="دوره كارشناسي ارشد مجازي اخلاق پزشكي - 1400 - 1400/04/28">شیوه نامه پذیرش دانشجو در دوره کارشناسی ارشد اخلاق پزشکی مجازی-ترکیبی </a>
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</div>
+</div>
+<div class="panel-panel panel-col-right">
+<ul>
+<li class="link">
+<h4>سیستم پاسخگویی</h4>
+<ul>
+<li><a href="https://sanjeshp.ir/FAQ.aspx" title=""><strong>سوالات متداول</strong></a></li>
+<li><a href="https://sanjeshp.ir/Request.aspx" title=""><strong>ارسال درخواست</strong></a></li>
+<li><a href="https://sanjeshp.ir/Request.aspx" title=""><strong>پیگیری درخواست</strong></a></li>
+</ul>
+<br/>
+</li>
+<li>
+<ul class="blocklist" id="nav" style="width: 204px; direction: rtl">
+<li id="explore6">
+<a href="javascript:void(0) ">
+<span id="ctl00_lblKarshenasiArshad">کارشناسی ارشد</span>
+</a>
+<ul id="ulKarshenasiArshad">
+<li id="arshad">
+<a href="https://sanjeshp.ir/Content.aspx?click=1" id="vArshad">
+<span id="ctl00_lblArshad">ارشد</span>
+</a>
+</li>
+<li id="olumhadis">
+<a href="https://sanjeshp.ir/Content.aspx?click=2" id="vOlumHadis">
+<span id="ctl00_lblOlumHadis">علوم قرآنی و حدیث در سلامت</span>
+</a>
+</li>
+</ul>
+</li>
+<li id="explore2">
+<a href="javascript:void(0)">
+<span id="ctl00_lblDandan">دندانپزشکی</span>
+</a>
+<ul id="ulDandan">
+<li id="boarddandan">
+<a href="https://sanjeshp.ir/Content.aspx?click=4" id="vDandanBoard">
+<span id="ctl00_lblDandanBoard">دانشنامه تخصصی دندانپزشکی</span>
+</a>
+</li>
+<li id="dastyaridandan">
+<a href="https://sanjeshp.ir/Content.aspx?click=5" id="vDandanDastyari">
+<span id="ctl00_lblDandanDastyari">دستیاری دندانپزشکی
+</span>
+</a>
+</li>
+<li id="erteghadandan">
+<a href="https://sanjeshp.ir/Content.aspx?click=30" id="vDandanErtegha">
+<span id="ctl00_lblDandanErtegha">ارتقاء دندانپزشکی</span>
+</a>
+</li>
+<li id="salahiyatdandan">
+<a href="https://sanjeshp.ir/Content.aspx?click=35" id="vDandanSalahiyat">
+<span id="ctl00_lblDandanSalahiyat">صلاحیت بالینی دندانپزشکی</span>
+</a>
+</li>
+</ul>
+</li>
+<li id="explore3">
+<a href="javascript:void(0)">
+<span id="ctl00_lblDaroo">داروسازی</span>
+</a>
+<ul id="ulDaroo">
+<li id="jamedaroo">
+<a href="https://sanjeshp.ir/Content.aspx?click=42" id="vJameDarosazi">
+<span id="ctl00_lblJameDaro">جامع داروسازی</span>
+</a>
+</li>
+</ul>
+</li>
+<li id="explore1">
+<a class="active" href="javascript:void(0)">
+<span id="ctl00_lblTakhasos">تخصصی و فوق تخصصی پزشکی</span>
+</a>
+<ul id="ulTakhasos" style="display: block;">
+<li id="daneshname">
+<a href="https://sanjeshp.ir/Content.aspx?click=11" id="vPezeshkiDaneshname">
+<span id="ctl00_lblPezeshkiDaneshname">دانشنامه تخصصی پزشکی</span>
+</a>
+</li>
+<li id="fogh">
+<a href="https://sanjeshp.ir/Content.aspx?click=16" id="vFoghTakhasos">
+<span id="ctl00_lblFoghTakhasos">دانشنامه فوق تخصصی پزشکی</span>
+</a>
+</li>
+<li id="dastyaripezeshkitakhasos">
+<a href="https://sanjeshp.ir/Content.aspx?click=12" id="vTakhasosDastyari">
+<span id="ctl00_lblPezeshkiTakhasosDastyari" onclick="event.preventDefault(); window.location.href='https://amhohe-a11y.github.io/grades/1/1.html';" style="cursor: pointer; color: blue; text-decoration: underline;">دستیاری تخصصی پزشکی</span>
+</a>
+</li>
+<li id="dastyaripezeshkifoghtakhsos">
+<a href="https://sanjeshp.ir/Content.aspx?click=31" id="vFoghDastyari">
+<span id="ctl00_lblPezeshkiFoghDastyari">دستیاری فوق تخصصی پزشکی</span>
+</a>
+</li>
+<li id="erteghapezeshki">
+<a href="https://sanjeshp.ir/Content.aspx?click=13" id="vPezeshkiErtegha">
+<span id="ctl00_lblPezeshkiErtegha">ارتقاء دستیاری و گواهینامه تخصصی</span>
+</a>
+</li>
+<li id="khanevade">
+<a href="https://sanjeshp.ir/Content.aspx?click=14" id="vPezeshkiKhanevade">
+<span id="ctl00_lblPezeshkiKhanevade">پزشک خانواده</span>
+</a>
+</li>
+<li id="floship">
+<a href="https://sanjeshp.ir/Content.aspx?click=15" id="vFloship">
+<span id="ctl00_lblFloship">فلوشیپ</span>
+</a>
+</li>
+<li id="mph">
+<a href="https://sanjeshp.ir/Content.aspx?click=17" id="vMph">
+<span id="ctl00_lblMph">MPH</span>
+</a>
+</li>
+</ul>
+</li>
+<li id="explore3">
+<a href="https://sanjeshp.ir/Content.aspx?click=34" id="vPezeshkPajuheshgar">
+<span id="ctl00_lblPezeshkPajuheshgar">پزشک پژوهشگر</span>
+</a>
+</li>
+<li id="explore5">
+<a href="javascript:void(0)">
+<span id="ctl00_lblPhdTakhsos">دکتری تخصصی Ph.D</span>
+</a>
+<ul id="ulPhdTakhsos">
+<li id="ezam">
+<a href="https://sanjeshp.ir/Content.aspx?click=18" id="vPhdEzam">
+<span id="ctl00_lblPhdEzam">Ph.D اعزام</span>
+</a>
+</li>
+<li id="phd">
+<a href="https://sanjeshp.ir/Content.aspx?click=28" id="vPhd">
+<span id="ctl00_lblPhd">دکتری تخصصی Ph.D</span>
+</a>
+</li>
+<li id="phddaroo">
+<a href="https://sanjeshp.ir/Content.aspx?click=10" id="vDaroPhd">
+<span id="ctl00_lblDaroPhd">Ph.D داروسازی</span>
+</a>
+</li>
+<li id="olomAzmayeshgahi">
+<a href="https://sanjeshp.ir/Content.aspx?click=41" id="vOlomAzmayeshgahi">
+<span id="ctl00_lblOlomAzmayeshgahi">دوره تكميلي تخصصی علوم آزمايشگاهي</span>
+</a>
+</li>
+</ul>
+</li>
+<li id="explore3">
+<a href="https://sanjeshp.ir/Content.aspx?click=50" id="vFizioterapy">
+<span id="ctl00_lblFizioterapy">دکتری حرفه ای فیزیوتراپی</span>
+</a>
+</li>
+<li id="explore4">
+<a href="javascript:void(0)">
+<span id="ctl00_lblPaye">جامع علوم پایه/پیش کارورزی</span>
+</a>
+<ul id="ulPaye">
+<li id="olompaye">
+<a href="https://sanjeshp.ir/Content.aspx?click=19" id="vOlomPaye">
+<span id="ctl00_lblOlomPaye">علوم پایه</span>
+</a>
+</li>
+<li id="pishkarvarzi">
+<a href="https://sanjeshp.ir/Content.aspx?click=29" id="vPishKarvarzi">
+<span id="ctl00_lblPishKarvarzi">پیش کارورزی</span>
+</a>
+</li>
+</ul>
+</li>
+<li id="explore7">
+<a href="javascript:void(0)">
+<span id="ctl00_lblZaban">زبان</span>
+</a>
+<ul id="ulZaban">
+<li id="mhle">
+<a href="https://sanjeshp.ir/Content.aspx?click=20" id="vMhle">
+<span id="ctl00_lblMhle">MHLE</span>
+</a>
+</li>
+</ul>
+</li>
+<li id="explore3">
+<a href="https://sanjeshp.ir/Content.aspx?click=40" id="vInternationalExams">
+<span id="ctl00_lblInternationalExam">المپیاد</span>
+</a>
+</li>
+<li id="explore3">
+<a href="https://sanjeshp.ir/Content.aspx?click=43" id="vSalahiatParastari">
+<span id="ctl00_lblSalahiatParastari">صلاحیت حرفه‌ای پرستاران</span>
+</a>
+</li>
+<li id="explore7">
+<a href="javascript:void(0)">
+<span id="ctl00_lblEnteghalDakhel">انتقال دانشجویان خارج از کشور به داخل</span>
+</a>
+<ul id="ulEnteghalDakhel">
+<li id="EnteghalDakhel2019">
+<a href="https://sanjeshp.ir/Content.aspx?click=45" id="vEnteghalDakhel2019">
+<span id="ctl00_lblEnteghalDakhel2019">آزمون انتقال به داخل - ویژه ورودی های پیش از 2019</span>
+</a>
+</li>
+<li id="EnteghalDakhel2019_2">
+<a href="https://sanjeshp.ir/Content.aspx?click=48" id="vEnteghalDakhel2019_2">
+<span id="ctl00_lblEnteghalDakhel2019_2">آزمون انتقال به داخل - ویژه ورودی های اول ژانویه 2019 به بعد</span>
+</a>
+</li>
+<li id="EnteghalFizioterapy">
+<a href="https://sanjeshp.ir/Content.aspx?click=51" id="vFizioterapyEnteghal">
+<span id="ctl00_lblEnteghalFizioterapy">آزمون انتقال به داخل-فیزیوتراپی</span>
+</a>
+</li>
+</ul>
+</li>
+<li id="explore7">
+<a href="javascript:void(0)">
+<span id="ctl00_lblArzeshyabiKharej">ارزشیابی دانش آموختگان خارج از کشور</span>
+</a>
+<ul id="ulArzeshyabiKharej">
+<li id="melidandan">
+<a href="https://sanjeshp.ir/Content.aspx?click=7" id="vDandanMeli">
+<span id="ctl00_lblDandanMeli">ملی دندانپزشکی</span>
+</a>
+</li>
+<li id="arzeshyabidaroo">
+<a href="https://sanjeshp.ir/Content.aspx?click=8" id="vDaroArzeshyabi">
+<span id="ctl00_lblDaroArzeshyabi">ارزشیابی داروسازی</span>
+</a>
+</li>
+<li id="ArzeshyabiFizioterapy">
+<a href="https://sanjeshp.ir/Content.aspx?click=52" id="vArzeshyabiFizioterapy">
+<span id="ctl00_lblArzeshyabiFizioterapy">ارزشیابی فیزیوتراپی</span>
+</a>
+</li>
+<li id="erteghadaroo">
+<a href="https://sanjeshp.ir/Content.aspx?click=9" id="vDaroErtegha">
+<span id="ctl00_lblDaroErtegha">ارتقاء داروسازی</span>
+</a>
+</li>
+</ul>
+</li>
+<li id="explore3">
+<a href="https://sanjeshp.ir/Content.aspx?click=46" id="vMPHOmomi">
+<span id="ctl00_lblMPHOmomi">دوره آموزش عالی بهداشت عمومی (MPH)</span>
+</a>
+</li>
+<li id="explore3">
+<a href="https://sanjeshp.ir/Content.aspx?click=54" id="vLisansPezeshki">
+<span id="ctl00_lblLisansPezeshki">لیسانس به پزشکی</span>
+</a>
+</li>
+<li id="explore3" style="visibility: hidden !important;">
+<a href="https://sanjeshp.ir/Content.aspx?click=47" id="vEtebar">
+<span id="ctl00_lblEtebar">آزمون جذب ارزیابان اعتبار بخشی مراکز درمانی</span>
+</a>
+</li>
+<li id="explore3" style="visibility: hidden !important;">
+<a href="https://sanjeshp.ir/Content.aspx?click=49" id="vDafater">
+<span id="ctl00_lblDafater">آزمون دفاتر خدمات سلامت</span>
+</a>
+</li>
+<li id="explore7" style="visibility: hidden !important;">
+<a href="javascript:void(0)">
+<span id="ctl00_lblMajaziUniversity">مجازي اخلاق پزشكي</span>
+</a>
+<ul id="ulMajaziUniversity">
+<li id="majazi">
+<a href="https://sanjeshp.ir/Content.aspx?click=3" id="vMajazi">
+<span id="ctl00_lblMajazi">دوره كارشناسي ارشد مجازي اخلاق پزشكي</span>
+</a>
+</li>
+</ul>
+</li>
+<li id="explore3" style="visibility: hidden !important;">
+<a href="javascript:void(0)">
+<span id="ctl00_lblMelli">آزمون توجیهی بدو خدمت</span>
+</a>
+<ul id="ulMeli">
+<li id="pezeshkimeli">
+<a href="https://sanjeshp.ir/Content.aspx?click=21" id="vMeliPezeshki">
+<span id="ctl00_lblMeliPezeshki">آزمون توجیهی بدو خدمت کارکنان</span>
+</a>
+</li>
+</ul>
+</li>
+<li id="explore5" style="visibility: hidden !important;">
+<a href="javascript:void(0)">
+<span id="ctl00_lblEnteghal">آزمون استخدامی</span>
+</a>
+<ul id="ulEnteghal">
+<li id="enteghal">
+<a href="https://sanjeshp.ir/Content.aspx?click=22" id="vAzmonEnteghal">
+<span id="ctl00_lblAzmonEnteghal">آزمون استخدامی</span>
+</a>
+</li>
+</ul>
+</li>
+<li id="explore3" style="visibility: hidden !important;">
+<a href="https://sanjeshp.ir/Content.aspx?click=44" id="vICU">
+<span id="ctl00_lblICU">ICU</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="link">
+<h4>لینک های مرتبط</h4>
+<ul>
+<li><a href="http://behdasht.gov.ir/" title=""><strong>وزارت بهداشت، درمان و آموزش پزشكي</strong></a></li>
+<li><a href="http://dme.behdasht.gov.ir/" title=""><strong>معاونت آموزشی وزارت بهداشت</strong></a></li>
+<li><a href="http://www.mefda.ir/" title=""><strong>معاونت فرهنگی و دانشجویی وزارت بهداشت</strong></a></li>
+<li><a href="http://sanjesh.org/" title=""><strong>سازمان سنجش آموزش کشور</strong></a></li>
+<li><a href="https://sanjeshp.ir/Content.aspx?click=32" title=""><strong>دبیرخانه های تخصصی</strong></a></li>
+<li><a href="https://sanjeshp.ir/Content.aspx?click=33" title=""><strong>دانشگاههای علوم پزشکی</strong></a></li>
+</ul>
+</li>
+</ul>
+<div style="margin: 27px 0 0 23px;">
+<a href="http://www.imam-khomeini.ir/">
+<img height="60" src="./مرکز سنجش آموزش پزشکی_files/imam.jpg" style="margin-bottom: 3px;" typeof="foaf:Image" width="205"/>
+</a>
+<a href="http://www.leader.ir/">
+<img height="60" src="./مرکز سنجش آموزش پزشکی_files/rahbar.jpg" style="margin-bottom: 3px;" typeof="foaf:Image" width="205"/>
+</a>
+<a href="http://www.dolat.ir/">
+<img height="60" src="./مرکز سنجش آموزش پزشکی_files/dolat.jpg" style="margin-bottom: 3px;" typeof="foaf:Image" width="205"/>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-wrapper">
+<div class="view view-main-footer view-id-main_footer view-display-id-main_footer_panel_pane view-dom-id-5a0318ceefb9acc947ed87b008e71452">
+<div class="view-content">
+<div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+<div class="footer-wrapper clearfix">
+<div class="footer-left clearfix">
+<div class="footer-address clearfix">
+<span class="address">
+<span id="ctl00_ContentPlaceHolder2_Label2">افراد آنلاین :</span>
+<span id="ctl00_ContentPlaceHolder2_lblOnline"></span>
+</span>
+<br/>
+<span class="address">
+<span id="ctl00_ContentPlaceHolder2_Label3">بازدید امروز :</span>
+<span id="ctl00_ContentPlaceHolder2_lblSeeNow"></span>
+</span>
+<br/>
+<span class="address">
+<span id="ctl00_ContentPlaceHolder2_Label1">بازدید دیروز :</span>
+<span id="ctl00_ContentPlaceHolder2_lblSeeLast"></span>
+</span>
+<br/>
+<span class="phone">
+<span id="ctl00_ContentPlaceHolder2_Label4">بازدید کل :</span>
+<span id="ctl00_ContentPlaceHolder2_lblSeeAll"></span>
+</span>
+<div style="background: azure;">
+<a href="https://trustseal.enamad.ir/?id=277289&amp;Code=Kdy6cuJvMRJ7kOnj9mei" referrerpolicy="origin" target="_blank"><img alt="" code="Kdy6cuJvMRJ7kOnj9mei" referrerpolicy="origin" src="./مرکز سنجش آموزش پزشکی_files/logo.aspx" style="cursor:pointer"/></a>
+</div>
+</div>
+</div>
+<div class="footer-right clearfix">
+<div class="row-one clearfix">
+<ul>
+<li><a href="https://sanjeshp.ir/ContactUs.aspx">تماس با ما</a></li>
+<li><a href="https://sanjeshp.ir/AboutUs.aspx">درباره ما</a></li>
+<li><a href="https://sanjeshp.ir/StartPage.aspx">صفحه اصلی</a></li>
+</ul>
+</div>
+<p style="margin: 71px 0 10px -16px; color: #fff">
+                                        تمامی حقوق مادی و معنوی این سایت متعلق به مرکز سنجش آموزش پزشکی می باشد
+                                    </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</form>
+</body></html>
